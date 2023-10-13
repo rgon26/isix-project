@@ -27,7 +27,10 @@ SECRET_KEY ='django-insecure-e7u8rv^4nna)cfbte&#+x)5&9wogf!6v3kw)30dv7i6%i$r$)r'
 DEBUG = False
 
 # 수정...
-ALLOWED_HOSTS = ['3.35.11.204']
+ALLOWED_HOSTS = [
+    'localhost',
+    '3.35.11.204'
+    ]
 
 # Application definition
 
@@ -156,11 +159,13 @@ USE_TZ = True
 ### 정적파일을 관리하는 경로
 # - 정적파일 : css, javascript, 이미지, 동영상 등(html은 제외)
 STATIC_URL = 'static/'
-
+MEDIA_URL = 'media/'
 ### 추가...
 ### 각 앱(app)에서 관리할 수 있도록 정적파일 관리 폴더 정의하기
 STATICFILES_DIRS = [BASE_DIR/'static']
 
+STATIC_ROOT = BASE_DIR / "static"
+MEDIA_ROOT = BASE_DIR / "media"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
