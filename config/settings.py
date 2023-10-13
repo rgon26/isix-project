@@ -162,7 +162,7 @@ STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 ### 추가...
 ### 각 앱(app)에서 관리할 수 있도록 정적파일 관리 폴더 정의하기
-STATICFILES_DIRS = [BASE_DIR/'static']
+# STATICFILES_DIRS = [BASE_DIR/'static']
 
 STATIC_ROOT = BASE_DIR / "static"
 MEDIA_ROOT = BASE_DIR / "media"
